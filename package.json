@@ -1,0 +1,51 @@
+{
+  "name": "chatbot-app",
+  "version": "1.0.0",
+  "description": "A modern AI chatbot application with TypeScript, Express, and multiple AI providers",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "axios": "^1.7.4",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "supertest": "^7.0.0",
+    "@types/supertest": "^2.0.16",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.30",
+    "@types/express": "^4.17.21"
+  },
+  "keywords": [
+    "chatbot",
+    "ai",
+    "typescript",
+    "nodejs",
+    "express",
+    "gemini",
+    "openrouter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.ts"],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    }
+  }
+}
